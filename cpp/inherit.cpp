@@ -4,40 +4,40 @@ using namespace std;
 
 class Human
 {
-private:
-    int age;
-    int id;
-public:
-    Human();
-    ~Human();
-    int getage();
-    int getid();
-    void setage(int n);
-    void setid(int n);
+    private:
+        int age;
+        int id;
+    public:
+        Human();
+        ~Human();
+        int getage();
+        int getid();
+        void setage(int n);
+        void setid(int n);
 };
 
 class Student:public Human
 {
-private:
-    int sid;
-public:
-    Student();
-    ~Student();
+    private:
+        int sid;
+    public:
+        Student();
+        ~Student();
 };
 
 class Teacher:public Human
 {
-private:
-    int tid;
-public:
-    Teacher();
-    ~Teacher();
+    private:
+        int tid;
+    public:
+        Teacher();
+        ~Teacher();
 };
 
 Human::Human()
 {
-    age = 0;
-    id = 0;
+    this->age = 0;
+    this->id = 0;
 
     cout<<"A human is successfully created!"<<endl;
 }
@@ -59,17 +59,17 @@ int Human::getid()
 
 void Human::setage(int n)
 {
-    age = n;
+    this->age = n;
 }
 
 void Human::setid(int n)
 {
-    id = n;
+    this->id = n;
 }
 
 Student::Student()
 {
-    sid = 0;
+    this->sid = 0;
 
     cout<<"A student is successfully created out of a human!"<<endl;
 }
@@ -81,7 +81,7 @@ Student::~Student()
 
 Teacher::Teacher()
 {
-    tid = 0;
+    this->tid = 0;
 
     cout<<"A teacher is successfully created out of a human!"<<endl;
 }

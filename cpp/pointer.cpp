@@ -6,22 +6,15 @@ void func(int *n);
 
 int main(int argc, char *argv[])
 {
-	int a;
-	a = 9;
-
-
-	int *b = &a;
-
-
-	func(b);
-
-
-	cout<<a<<endl;
-
-	return 0;
+    int a;
+    a = 9;
+    int *b = &a;
+    func(b);
+    cout<<a<<endl;
+    return 0;
 }
 
 void func(int *n)
 {
-	*n = *n + 1;
+    *n = *n + 1;
 }
