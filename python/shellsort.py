@@ -1,3 +1,6 @@
+#!/bin/env python
+# -*- coding: utf8 -*-
+
 def shellSort(A):
     def getCols(n):
         cols = [1]
