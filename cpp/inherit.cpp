@@ -94,14 +94,14 @@ Teacher::~Teacher()
 int main(int argc, char *argv[])
 {
     Student Daniel;
-    Teacher Bitch;
+    Teacher James;
     Daniel.setage(17);
     Daniel.setid(7654);
     cout<<"Student Daniel(id:"<<Daniel.getid()<<") is "<<Daniel.getage()<<" years old!"<<endl;
-    Bitch.setage(80);
-    Bitch.setid(4242);
-    cout<<"Teacher Bitch(id:"<<Bitch.getid()<<") is "<<Bitch.getage()<<" years old!"<<endl;
+    James.setage(80);
+    James.setid(4242);
+    cout<<"Teacher James(id:"<<James.getid()<<") is "<<James.getage()<<" years old!"<<endl;
     cout<<endl;
-    cout<<"Daniel loves the old Bitch so much!"<<endl;
+    cout<<"Daniel loves the James very much!"<<endl;
     return 0;
 }
