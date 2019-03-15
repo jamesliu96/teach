@@ -10,7 +10,7 @@ class Point
         int z;
     public:
         Point();
-        Point(int i, int j, int k);
+        Point(int, int, int);
         ~Point();
         int getx();
         int gety();
